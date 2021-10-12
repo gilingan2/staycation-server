@@ -40,9 +40,9 @@ router.put('/item/update/activity', upload, adminController.editActivity)
 router.delete('/item/:itemId/activity/:id', adminController.deleteActivity)
 
 // Endpont Booking
-router.get('/booking', adminController.viewBooking);
-router.get('/booking/:id', adminController.showDetailBooking);
-router.put('/booking/:id/confirmation', adminController.actionConfirmaton);
-router.put('/booking/:id/reject', adminController.actionReject);
+router.get('/booking', adminController.viewBooking)
+router.get('/booking/:id', adminController.showDetailBooking)
+router.put('/booking/:id/confirmation', adminController.actionConfirmaton)
+router.put('/booking/:id/reject', adminController.actionReject)
 
-module.exports = router;
+module.exports = router

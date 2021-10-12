@@ -2,8 +2,8 @@ const router = require('express').Router()
 const apiController = require('../controllers/apiControllers')
 const { upload } = require('../middlewares/multer')
 
-router.get('/landingPage', apiController.landingPage)
-router.get('/detailPage/:id', apiController.detailPage)
-router.post('/bookingpage', upload, apiController.bookingPage)
+router.get('/landing-page', apiController.landingPage)
+router.get('/detail-page/:id', apiController.detailPage)
+router.post('/booking-page', upload, apiController.bookingPage)
 
-module.exports = router;
+module.exports = router
