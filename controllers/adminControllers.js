@@ -453,7 +453,7 @@ module.exports = {
             })
 
             const item = await Item.findOne({ _id: itemId })
-            item.featuredId.push({ _id: feature._id })
+            item.featureId.push({ _id: feature._id })
             await item.save()
             req.flash('alertMessage', 'Success Add Feature')
             req.flash('alertStatus', 'success')
@@ -502,10 +502,10 @@ module.exports = {
         try {
             const feature = await Feature.findOne({ _id: id })
 
-            const item = await Item.findOne({ _id: itemId }).populate('featuredId')
-            for (let i = 0; i < item.featuredId.length; i++) {
-                if (item.featuredId[i]._id.toString() === feature._id.toString()) {
-                    item.featuredId.pull({ _id: feature._id })
+            const item = await Item.findOne({ _id: itemId }).populate('featureId')
+            for (let i = 0; i < item.featureId.length; i++) {
+                if (item.featureId[i]._id.toString() === feature._id.toString()) {
+                    item.featureId.pull({ _id: feature._id })
                     await item.save()
                 }
             }
