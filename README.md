@@ -28,7 +28,7 @@ Web Staycation yang dibuat oleh <a href="https://github.com/Roisfaozi"> Rois Fao
 **Admin Default Account**
 
 - Username: admin
-- Password: admin123
+- Password: rahasia
 
 ---
 
