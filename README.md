@@ -23,6 +23,15 @@ Web Staycation yang dibuat oleh <a href="https://github.com/Roisfaozi"> Rois Fao
 
 ---
 
+## Default Account for testing
+
+**Admin Default Account**
+
+- Username: admin
+- Password: admin123
+
+---
+
 
 ## Install
 
